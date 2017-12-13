@@ -1,0 +1,279 @@
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: 宋体 Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*-----------------------------------------音乐开始------------------------------*/
+#music {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 4%;
+    right: 5%;
+    z-index: 9;
+    /*background: blue;*/
+}
+
+@keyframes dong {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.musictu {
+    animation: dong 2s linear infinite;
+    position: absolute;
+    left: 8px;
+    top: -4px;
+}
+
+.bg {
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 8;
+    display: block;
+}
+/*------------------------------------------音乐结束---------------------------------------------*/
+/*---------第一屏开始--------------------------*/
+.swiper-slide.yi{
+    background: url("../img/yitop.jpg");
+    background-size: 100% 100%;
+}
+.yi-top{
+    color: white;
+    font-size: 10vw;
+    position: absolute;
+    top: 10%;
+}
+.yi-botton-center p:nth-of-type(1){
+    position: absolute;
+    width: 53%;
+    left: 20%;
+    top: 25%;
+    font-size: 17vw;
+}
+.yi-botton-center .top{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    font-size: 5vw;
+    top: 53%;
+}
+.yi-botton-center .center{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:60%;
+    font-size: 6vw;
+}
+.yi-botton-botton{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    font-size: 5vw;
+    top: 53%;
+}
+/*---------第一屏结束--------------------------*/
+/*---------第二屏开始--------------------------*/
+.swiper-slide.er{
+    background: url("../img/yitop.jpg");
+    background-size: 100% 100%;
+}
+.swiper-slide.er .yit{
+    /*display: block;*/
+    /*background: white;*/
+    /*opacity: 0.5;*/
+    /*margin: 10px;*/
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    /*top: 10%;*/
+    /*left: 20%;*/
+    background: rgba(255,255,255,0.5);
+}
+.swiper-slide.er .yit-top{
+    font-size: 8vw;
+    top: 5%;
+    left: 33%;
+    position: absolute;
+}
+.swiper-slide.er .yit-center{
+    font-size: 4vw;
+    top: 15%;
+    position: absolute;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-indent: 2em;
+}
+.swiper-slide.er .yit-botton{
+    font-size: 4vw;
+    top: 40%;
+    position: absolute;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-indent: 2em;
+}
+/*---------第二屏结束--------------------------*/
+/*---------第三屏开始--------------------------*/
+.swiper-slide.three {
+    background: url("../img/yitop.jpg");
+    background-size: 100% 100%;
+
+}
+.swiper-slide.three .top{
+    position: absolute;
+    top: 1%;
+    left: 38%;
+    font-size: 8vw;
+}
+.swiper-slide.three #map{
+    width: 80%;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+.swiper-slide.three .bottom{
+    position: absolute;
+    font-size: 5vw;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+}
+/*---------第三屏结束--------------------------*/
+/*---------第四屏开始--------------------------*/
+.swiper-slide.four {
+    background: url("../img/yitop.jpg");
+    background-size: 100% 100%;
+
+}
+.swiper-slide.four .top p{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 5%;
+    font-size: 9vw;
+}
+.swiper-slide.four .center ul{
+    width: 20%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+.swiper-slide.four .center ul li{
+    list-style: none;
+    height: 48px;
+    line-height: 48px;
+}
+.swiper-slide.four .bottom ul{
+    width: 60%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+.swiper-slide.four .bottom ul li{
+    list-style: none;
+    height: 48px;
+    line-height: 48px;
+
+}
+/*---------第四屏结束--------------------------*/
+.swiper-slide.five{
+    background: url("../img/yitop.jpg");
+    background-size: 100% 100%;
+}
+.swiper-slide.five .bottom{
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    font-size: 10vw;
+    left: 25%;
+}
+.swiper-slide.five .top{
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    top: 20%;
+    height: 66%;
+}
+.swiper-slide.five .l1{
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 100%;
+}
+.swiper-slide.five .l2{
+    position: absolute;
+    left: 0;
+    top:15%;
+    width: 100%;
+}
+.swiper-slide.five .l3{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+}
+.swiper-slide.five .l4{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width:100%;
+}
+.swiper-slide.five .l5{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width:100%;
+}
+.swiper-slide.five input[type=text]{
+    height: 30px;
+    width: 70%;
+    border-radius: 11px;
+    padding-left: 3%;
+    outline: none;
+}
+.swiper-slide.five input[type=submit]{
+    width: 70%;
+    border-radius: 11px;
+    height: 30px;
+    outline:none;
+}

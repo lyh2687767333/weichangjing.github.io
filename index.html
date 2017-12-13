@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=	Mgipq5a4fnUijgpkFoyVQgsf8N9G1Xj6"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide yi">
+            <div class="yi-top ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+                 swiper-animate-delay="0">盛邦升华
+            </div>
+            <div class="yi-botton">
+                <div class="yi-botton-top"></div>
+                <div class="yi-botton-center">
+                    <p class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s"
+                       swiper-animate-delay="0.5s">邀请函</p>
+                    <p class="top ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s"
+                       swiper-animate-delay="1s">我们诚挚的邀请贵公司参加我们的双选会</p>
+                    <p class="center ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s"
+                       swiper-animate-delay="1.5s">2017年12月16日（周六）</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide er">
+            <div class="yit ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                <div class="yit-top ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+                    学院简介
+                </div>
+                <div class="yit-center ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                    <span>泊头职业学院是一所富有光荣革命传统历史名校，其前身为1925年9月建校，有沧州黄埔之誉的河北泊头师范学校。我院是经教育局批准的省属公办全日制普通高等院校，专科层次，具有单招和统招的招生资格和计划。</span>
+                </div>
+                <div class="yit-botton ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+                    <span>盛邦升华成立于2004年，是一家发展多年IT技术咨询和技术培训的企业；开设课程贴近企业项目技术，师资具有多年企业项目经验。自2012年，泊头职业学院与盛邦升华深度合作，已经培养优秀毕业生并成功就业近千人。</span>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide three">
+            <div class="top ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                <p>会议地址</p>
+            </div>
+            <div class="bottom ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                <p>河北省沧州市泊头市解放西路光明街150号</p>
+            </div>
+            <div style="width:70%;height:50%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+        </div>
+        <div class="swiper-slide four">
+            <div class="top ani" swiper-animate-effect="" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                <p>大会流程</p>
+            </div>
+            <div class="center">
+                <ul>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">8:45</li>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">9:00</li>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">10:00</li>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">11:00</li>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">11:45</li>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s">13:00</li>
+                    <li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="2.1s">15:00</li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">签到</li>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">学院介绍</li>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">参观</li>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">双选环节</li>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">午餐</li>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s">复试</li>
+                    <li class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2.1s">结束</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-slide five">
+            <div class="bottom ani">
+                <p>加入我们</p>
+            </div>
+            <div class="top">
+                <p class="l1 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><input type="text" placeholder="姓名"></p>
+                <p class="l2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1s"><input type="text" placeholder="手机号"></p>
+                <p class="l3 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"><input type="text" placeholder="人数"></p>
+                <p class="l4 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2s"><input type="text" placeholder="公司"></p>
+                <p class="l5 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s"><input type="submit" placeholder="提交" class="img"></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<!--音乐开始-->
+<div id="music">
+    <img src="img/music_off.png" alt="" class="musictu">
+    <img src="img/music.gif" alt="" class="bg">
+    <audio src="img/weichangjing.mp3" autoplay></audio>
+</div>
+<!--音乐结束-->
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
